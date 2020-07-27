@@ -1,0 +1,22 @@
+form, h2, p{
+	width: 530px;
+	margin-left: 310px;
+}
+
+body, html {
+	position:relative;
+	height:100%;
+}
+
+.footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+
+}
+
+p {
+ 	margin: 0;
+ 	text-align: left;
+ 	font-size: 10px;
+}

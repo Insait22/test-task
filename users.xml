@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1
+- Время создания: Июл 27 2020 г., 21:05
+- Версия сервера: 10.4.11-MariaDB
+- Версия PHP: 7.4.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="users" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `login` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `password` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'users'
+    -->
+    <database name="users">
+        <!-- Таблица users -->
+        <table name="users">
+            <column name="id">1</column>
+            <column name="login">Insait</column>
+            <column name="email">customs2222@mail.ru</column>
+            <column name="name">Дмитрий</column>
+            <column name="password">$2y$10$RvyMeQ/ewsIv7.4T27t4r.3vo8.4LYVfXpOTvPUWgTmCPms7FhOSq</column>
+        </table>
+        <table name="users">
+            <column name="id">2</column>
+            <column name="login">Boxman</column>
+            <column name="email">www.looks@mail.ru</column>
+            <column name="name">Илья</column>
+            <column name="password">$2y$10$88V0nymP/H1Gy53v1rYrZuGQUBTVtc2dPgKDsq0h6GXGOykGrTq6O</column>
+        </table>
+        <table name="users">
+            <column name="id">3</column>
+            <column name="login">Galaktika</column>
+            <column name="email">www.terrnova@gmail.com</column>
+            <column name="name">Анна</column>
+            <column name="password">$2y$10$vbCOK1c6SlBlX/AHLKgEnOmOr3/sNxY9qxKqSMq.MnXrnHdBClXpW</column>
+        </table>
+    </database>
+</pma_xml_export>
